@@ -27,7 +27,7 @@ interface User {
 
 <h2>Endpoints</h2>
 
-<p><b>/list</b> | Devuelve un array con todos los usuarios disponibles:</p>
+<p><b>api/user/list</b> | Devuelve un array con todos los usuarios disponibles:</p>
 
 ```typescript
 router.get('/list', (_req, res) => {
@@ -35,7 +35,7 @@ router.get('/list', (_req, res) => {
 });
 ```
 
-<p><b>/add</b> | Crea un usuario, recibiendo un json por el body con 'name' y 'email' (demás atributos son autogenerados):</p>
+<p><b>api/user/add</b> | Crea un usuario, recibiendo un json por el body con 'name' y 'email' (demás atributos son autogenerados):</p>
 
 ```json
 {
@@ -59,7 +59,7 @@ router.post('/add', (req, res) => {
 });
 ```
 
-<p><b>/update</b> | Actualiza un usuario, recibiendo un json por el body con 'id', 'name', 'email' 
+<p><b>api/user/update</b> | Actualiza un usuario, recibiendo un json por el body con 'id', 'name', 'email' 
 e incluso 'create_date' (todos los atributos deben enviarse por el body, aunque 
 únicamente el id es requerido, demás atributos pueden viajar vacios):</p>
 
@@ -90,7 +90,7 @@ router.put('/update', (req, res) => {
 });
 ```
 
-<p><b>/delete/:id</b> | Recibe como path-var el 'id' del usuario a eliminar:</p>
+<p><b>api/user/delete/:id</b> | Recibe como path-var el 'id' del usuario a eliminar:</p>
 
 ```typescript
 router.delete('/delete/:id', (req, res) => {
