@@ -1,4 +1,5 @@
 import { CheckProps } from '../types/app-types';
+import chalk from 'chalk';
 
 function formattedValue(value: number): string {
   const strValue = value.toString();
@@ -26,9 +27,28 @@ export function formattedDate(): string {
   return currentFullDate;
 }
 
-export function consoleLogTimed(message: string) {
-  console.log(`${formattedDate()} | ${message}`);
+export function timedLog(message: string) {
+  return `${formattedDate()} | ${message}`;
 }
+
+export const print = {
+  error: (message: string, bold?: boolean) => {
+    const formatted = bold ? chalk.red.bold : chalk.red;
+    console.log(formatted(timedLog(message)));
+  },
+  success: (message: string, bold?: boolean) => {
+    const formatted = bold ? chalk.green.bold : chalk.green;
+    console.log(formatted(timedLog(message)));
+  },
+  warning: (message: string, bold?: boolean) => {
+    const formatted = bold ? chalk.yellow.bold : chalk.yellow;
+    console.log(formatted(timedLog(message)));
+  },
+  info: (message: string, bold?: boolean) => {
+    const formatted = bold ? chalk.cyan.bold : chalk.cyan;
+    console.log(formatted(timedLog(message)));
+  },
+};
 
 export function getUniqueElements(collection: any[]): any[] {
   let collectionElementsStr = collection.map((element) => {
