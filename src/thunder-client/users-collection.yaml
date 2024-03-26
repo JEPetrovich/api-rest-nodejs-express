@@ -1,0 +1,80 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "user",
+    "dateExported": "2024-03-25T23:46:54.107Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "93235121-e8f6-492d-973d-17dd553ef49e",
+            "colId": "1b05eda1-a6e2-425a-ac10-6bf86293a2ee",
+            "containerId": "",
+            "name": "updateUser",
+            "url": "http://localhost:8080/api/user/update",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2024-03-25T23:45:56.424Z",
+            "modified": "2024-03-25T23:45:56.424Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 0,\n  \"name\": \"\",\n  \"email\": \"\",\n  \"create_date\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "75f57b8f-d66d-4b6b-83a2-f434af5643fe",
+            "colId": "1b05eda1-a6e2-425a-ac10-6bf86293a2ee",
+            "containerId": "",
+            "name": "addUser",
+            "url": "http://localhost:8080/api/user/add",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-25T23:46:06.527Z",
+            "modified": "2024-03-25T23:46:06.527Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Julio\",\n  \"email\": \"julio@mail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d427d451-1ef2-4a23-83a0-ddea9c7a276a",
+            "colId": "1b05eda1-a6e2-425a-ac10-6bf86293a2ee",
+            "containerId": "",
+            "name": "deleteUser",
+            "url": "http://localhost:8080/api/user/delete/0",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-25T23:46:11.607Z",
+            "modified": "2024-03-25T23:46:11.607Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a0fa5e21-5096-4d2a-b8f7-31b2dd091822",
+            "colId": "1b05eda1-a6e2-425a-ac10-6bf86293a2ee",
+            "containerId": "",
+            "name": "updateUser",
+            "url": "http://localhost:8080/api/user/update",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-25T23:46:16.571Z",
+            "modified": "2024-03-25T23:46:16.571Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 0,\n  \"name\": \"\",\n  \"email\": \"\",\n  \"create_date\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
