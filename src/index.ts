@@ -1,9 +1,10 @@
 import express from 'express';
+import cors from 'cors';
 import { consoleLogTimed } from './utils/app-utils';
 import userController from './controllers/user-controller';
 
 const app = express();
-app.use(express.json());
+app.use(cors());
 
 const PORT = 8080;
 
