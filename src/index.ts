@@ -4,7 +4,7 @@ import userController from './controllers/user-controller';
 import { print } from './utils/app-utils';
 
 const app = express();
-app.use(cors());
+app.use([express.json(), cors()]);
 
 const PORT = 8080;
 
